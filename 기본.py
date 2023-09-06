@@ -46,3 +46,5 @@ if isAdualt :
 else :
     print("나는 성인이 아닙니다.")
 
+
+### 잘 추가 되었나?
