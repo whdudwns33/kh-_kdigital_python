@@ -105,13 +105,14 @@
 #     print()
 
 
+
 # 문자 출력. 문자와 ASCII코드
 #chr : 유니코드 값을 입력 받아 그 코드에 해당하는 문자를 출력.
 #ord : 문자를 유니코드로 변환
-for i in range(ord("A"),ord("Z")+1): # A = 65,
-    print(chr(i), end=" ") # chr 문자 출력
-print()
-
-for i in range(65,91):#A:65 Z:90
-	print(chr(i), end=" ")
-print()
+# for i in range(ord("A"),ord("Z")+1): # A = 65,
+#     print(chr(i), end=" ") # chr 문자 출력
+# print()
+#
+# for i in range(65,91):#A:65 Z:90
+# 	print(chr(i), end=" ")
+# print()
