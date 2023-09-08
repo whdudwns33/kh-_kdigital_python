@@ -65,8 +65,10 @@ def print_info(name, age, gender, jobs) :
     print("=" * 3, "회원정보", "=" * 3)
     return  f" 이름 : {name}\n 나이 : {age}\n 성별 : {gender}\n 직업 : {jobs_str[jobs]}"
 
+
+
 member_info = "member.txt"      # txt형으로 member 저장.
-fd = open(member_info, "wt", encoding="utf-8")  # wt는 쓰다.
+fd = open(member_info, "wt", encoding="utf-8")  # wt는 쓰다. open()은 w쓰기, r읽기 를 선언해줘야 함.
 while True:
     name = input("이름, 종료(quit) :")
     if name == 'quit' : break
