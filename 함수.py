@@ -17,13 +17,12 @@
 # name_card("도적","커닝시티","004")
 #
 #
-# # 순차검색
+# 순차검색
 # def search_list(a,x):
 #     for i in range(len(a)):
 #         if x == a[i]:
 #             return i
-#         else:
-#             return -1
+#     return -1
 #
 # v = [17,18,19,92,33,58,7]
 # print(search_list(v, 33))
