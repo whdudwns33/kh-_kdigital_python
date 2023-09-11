@@ -25,19 +25,27 @@
 # map(함수, 리스트): 리스트의 요소를 함수에 넣고 새로운 리스트로 구성
 
 #power 함수
-def power(n) :
-    return n * n
-#람다로 선언한 power
-power_lambda = lambda n: n * n
+# def power(n) :
+#     return n * n
 
-in_ = [1,2,3,4,5]
-out_1 = list(map(power, in_))
-out_2 = list(map(power_lambda, in_))
-out_3 = list(map(lambda n: n * n, in_))
+# 람다로 선언한 power
+# power_lambda = lambda n: n * n
 
-print(out_1)
-print(out_2)
-print(out_3)
+# in_ = [1,2,3,4,5]
+# out_1 = list(map(power, in_))
+# out_2 = list(map(power_lambda, in_))
+# out_3 = list(map(lambda n: n * n, in_))   # 함수자리에 람다식으로 익명의 함수를 넣는 방법
+
+# print(out_1)
+# print(out_2)
+# print(out_3)
+
+
+# 리스트에 람다를 넣는 방법
+my_list = [lambda a,b: a*b, lambda a,b: a+b]    # 0번째열은 곱셈, 1번쨰열은  덧셈
+print(my_list[0](5,2))
+print(my_list[1](5,2))
+
 
 
 
