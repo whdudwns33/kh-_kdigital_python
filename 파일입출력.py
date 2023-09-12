@@ -33,9 +33,9 @@ score_file = open("score.txt", "r", encoding="utf-8")
 # score_file.close()
 
 # with 키워드 사용 하기: open() 이후에 자동으로 close를 호출해주는 기능
-with open("score.txt", "r", encoding="utf-8")as score_file:
-    print(score_file.read()) # with는 들여쓰기가 필요함
-
-print("프로그램 끝")
+# with open("score.txt", "r", encoding="utf-8")as score_file:
+#     print(score_file.read()) # with는 들여쓰기가 필요함
+#
+# print("프로그램 끝")
 
 
