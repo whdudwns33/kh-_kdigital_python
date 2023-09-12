@@ -1,12 +1,13 @@
 # 생성자는 클래스가 객체로 만들어 질 때, 자동으로 호출되며 객체의 초기값을 지정할 수 있음
 # 생성자 키워드가 있음: __init__
-# self는 자신의 객체를 가리키는 변수
+# self는 자신의 객체를 가리키는 변수.
 # 파이썬은 오버로딩이 없고 캡슐화가 완벽하지 않음
 # 인스턴스 필드는 따로 없고 생성자 안에 직접 입력해야함
 
+
 class Tv :
     #생성자 생성
-    def __init__(self,name, is_on, channal, volume):
+    def __init__(self,name, is_on, channal, volume):    # 객체, 이름~~~
         self.name = name
         self.is_on = is_on
         self.channel = channal
