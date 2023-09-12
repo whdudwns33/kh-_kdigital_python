@@ -6,7 +6,7 @@
 from abc import *
 class NetworkAdapter(metaclass=ABCMeta): #추상 클래스를 선언
     @abstractmethod     # 추상메서드
-    def connect(self): pass # 구현할 내용이 없는 경우  pass 키워드를 사용
+    def connect(self): pass # 구현할 내용이 없는 경우  pass 키워드를 사용. 상속받은 class에서 무조건 선언 해야함
 
 
 class Wifi(NetworkAdapter) :
