@@ -23,9 +23,9 @@ class FiveG(NetworkAdapter) :
     def connect(self):              # 부모 클래스에게서 상속받은 connect 추상 메서드 구현
         print(f"{self.company} 5G에 연결 했습니다.")
 
-net = input("연결할 네트워크를 선택 : [1]Wifi [2]5G")
+net = input("연결할 네트워크를 선택 : [1]Wifi [2]5G :")
 if net == "1":
-    adapter = Wifi("kt")
+    adapter = Wifi("kt")    # adapter 객체는 Wifi클래스로 만들어지고 Wifi 생성자의 company 인스턴스변수(파이썬은 매개변수와 동일) self는 adapter를 의미한다 생각하면 될 듯
     adapter.connect()
 elif net =="2":
     adapter = FiveG("LG")
