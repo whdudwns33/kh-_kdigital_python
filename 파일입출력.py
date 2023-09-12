@@ -16,7 +16,7 @@
 #readline(): 해당 파일의 내용을 한라인씩 읽어 들여 문자열로 반환, 더 이상 읽을 내용이 없으면 None 반환
 #readlines(): 해당 파일의 모든 라인을 순서대로 읽어 각각의 라인을 하나의 요소로 저장하는 리스트를 반환
 
-score_file = open("score.txt", "r", encoding="utf-8")
+# score_file = open("score.txt", "r", encoding="utf-8")
 # # print(score_file.read())
 # # score_file.close()
 #
@@ -38,4 +38,18 @@ score_file = open("score.txt", "r", encoding="utf-8")
 #
 # print("프로그램 끝")
 
+
+# pickle: 직렬화 역직렬화
+# 객체를 직렬화하여 파일에 저장
+import pickle
+# data = {"name":"전사", "level":200, "addr":"페리온"}
+# with open("data.pickle", "wb")as file :
+#     pickle.dump(data, file)
+
+# 역직렬화
+# 파일에서 객체를 역직렬화하여 복원하기
+with open("data.pickle", "rb") as file :
+    # restored_data = pickle.loads(file)
+    restored_data = pickle.load(file)
+print(restored_data)
 
