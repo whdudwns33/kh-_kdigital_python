@@ -9,7 +9,13 @@ except ZeroDivisionError as err:
     print(err)
 except Exception as err:
     print(err)
-else :
+else :      # 정상실행되었을 때 호출 조건 분기 되는 위치
     print("정상 처리 되었습니다.")
 finally:    # 오류 여부 없이 무조건 실행
     print("프로그램 실행 완료!!")
+
+
+
+
+
+
